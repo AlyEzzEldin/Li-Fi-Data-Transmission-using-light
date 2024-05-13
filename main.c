@@ -13,7 +13,8 @@
 #include "util/delay.h"
 
 #define PERIOD 15
-u8 str[] = " El Lol + Saleh + Megahed \n";
+u8 str[] = "Lol "
+		"";
 void send_byte(u8 Byte);
 void main(void)
 {
@@ -25,8 +26,9 @@ void main(void)
 		{
 			send_byte(str[i]);
 			i++;
+			_delay_ms(1000);
 		}
-		_delay_ms(1000);
+
 	}
 
 }
